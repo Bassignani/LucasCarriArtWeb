@@ -1,0 +1,8 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 1000'>
+  <rect width='800' height='1000' fill='#f5f5f4'/>
+  <rect x='30' y='30' width='740' height='940' rx='24' fill='none' stroke='#111' stroke-width='8'/>
+  <path d='M80 740 C210 610 340 860 470 730 C560 640 620 610 720 670' stroke='#111' stroke-width='10' fill='none' stroke-linecap='round'/>
+  <circle cx='190' cy='280' r='75' fill='none' stroke='#111' stroke-width='10'/>
+  <text x='80' y='130' font-size='58' font-family='Arial, Helvetica, sans-serif' fill='#111'>LUCASCARRI.ART</text>
+  <text x='80' y='860' font-size='42' font-family='Arial, Helvetica, sans-serif' fill='#111'>PLACEHOLDER ARTWORK</text>
+</svg>
