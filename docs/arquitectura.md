@@ -37,3 +37,12 @@ Implementada con Framer Motion usando `layoutId` compartido para transición flu
 - UI minimalista para priorizar ilustraciones.
 - Componentes pequeños y tipados.
 - Preparación para futura tienda sin implementar checkout.
+
+## Ajuste de layout por ruta (v0.2.1)
+
+Se agregó `SiteShell` como componente de estructura para detectar la ruta actual y decidir la posición de la navegación:
+
+- Home (`/`): navegación inferior
+- Rutas internas: navegación superior
+
+Esto permite mantener el diseño de portada sin duplicar lógica en cada página.

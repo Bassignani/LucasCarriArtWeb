@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -7,6 +8,10 @@ type NavItem = {
   key: string;
   label: string;
   href: string;
+};
+
+type WaveNavigationProps = {
+  className?: string;
 };
 
 const NAV_ITEMS: NavItem[] = [
@@ -24,18 +29,15 @@ function WaveIcon({ label, href, isCurrent }: { label: string; href: string; isC
       aria-current={isCurrent ? "page" : undefined}
       className="group flex min-w-20 flex-col items-center gap-2 rounded-xl px-2 py-1 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-black"
     >
-      <span
-        aria-hidden
-        className="grid h-12 w-12 place-items-center rounded-full border-2 border-black text-lg transition group-hover:-translate-y-1"
-      >
-        〰
+      <span aria-hidden className="relative h-12 w-12 transition duration-200 group-hover:-translate-y-1">
+        <Image src="/ui/button.png" alt="" fill className="object-contain" sizes="48px" />
       </span>
       <span className="text-xs font-medium uppercase tracking-wide">{label}</span>
     </Link>
   );
 }
 
-export function WaveNavigation() {
+export function WaveNavigation({ className = "" }: WaveNavigationProps) {
   const pathname = usePathname();
 
   const items = pathname === "/"
@@ -43,7 +45,7 @@ export function WaveNavigation() {
     : [{ key: "home", label: "Home", href: "/" }, ...NAV_ITEMS.filter((item) => item.href !== pathname)];
 
   return (
-    <nav aria-label="Navegación principal" className="mb-8">
+    <nav aria-label="Navegación principal" className={className}>
       <ul className="flex flex-wrap justify-center gap-3 md:gap-6">
         {items.map((item) => (
           <li key={item.key}>

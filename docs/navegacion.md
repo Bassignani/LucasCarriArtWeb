@@ -28,3 +28,9 @@ Cada item de navegación usa:
 - Componente único y reutilizable para todas las rutas.
 - Lógica de estado de ruta encapsulada con `usePathname`.
 - Fácil ampliación para futuras categorías.
+
+## Actualización visual 0.2.1
+
+- Los ítems de navegación ahora usan la imagen real del botón en `/public/ui/button.png`.
+- En la Home, la navegación se ubica en la parte inferior de la pantalla para respetar la referencia visual del proyecto.
+- En el resto de rutas, la navegación se mantiene sobre la galería para facilitar recorridos entre categorías.

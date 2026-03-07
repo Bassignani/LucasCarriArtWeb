@@ -5,6 +5,17 @@ Todos los cambios importantes de este proyecto serán documentados en este archi
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/),
 y este proyecto adhiere a [Semantic Versioning](https://semver.org/lang/es/).
 
+## [0.2.1] - 2026-03-07
+
+### Changed
+- Ajuste visual global para que todas las páginas utilicen fondo `rgb(214,210,193)`.
+- Header actualizado para usar el logo real del proyecto desde `/public/banner.png`.
+- Navegación actualizada para usar el recurso gráfico `/public/ui/button.png` como botón visual de cada ítem.
+- Reubicación de la navegación en Home a la zona inferior de la página, manteniendo navegación superior para secciones internas.
+
+### Fixed
+- Corrección de estructura de layout para separar la experiencia de Home (navegación inferior) del resto de rutas.
+
 ## [0.2.0] - 2026-03-07
 
 ### Added

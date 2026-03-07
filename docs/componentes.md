@@ -56,3 +56,10 @@ Bloque reutilizable en Home con:
 - tipado con TypeScript
 - responsabilidad única por componente
 - preparación para escalado futuro
+
+### `SiteShell`
+
+Componente de layout cliente que decide la posición de `WaveNavigation` según la ruta activa.
+
+- Home: sin nav superior
+- Internas: nav superior
