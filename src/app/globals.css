@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+:root {
+  --font-brittany: "Brush Script MT";
+  --font-gagalin: "Impact";
+}
+
 * {
   box-sizing: border-box;
 }
@@ -23,4 +28,17 @@ a {
   text-align: center;
   padding: 10px 0;
   font-family: 'brittany';
+}
+
+
+.font-brittany {
+  font-family: var(--font-brittany), cursive;
+}
+
+.font-gagalin {
+  font-family: var(--font-gagalin), sans-serif;
+}
+
+.font-brittany-signature {
+  font-family: var(--font-brittany), cursive;
 }
