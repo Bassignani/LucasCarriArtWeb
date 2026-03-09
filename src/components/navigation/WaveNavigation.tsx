@@ -27,13 +27,12 @@ function WaveIcon({ label, href, isCurrent }: { label: string; href: string; isC
     <Link
       href={href}
       aria-current={isCurrent ? "page" : undefined}
-      className="group flex min-w-20 flex-col items-center gap-2 rounded-xl px-2 py-1 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-black"
+      className="group inline-flex items-center gap-2 rounded-xl px-2 py-1 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-black"
     >
-      <span aria-hidden className="relative h-24 w-24 transition duration-200 group-hover:-translate-y-1">
-      {/* <span aria-hidden className="relative h-12 w-12 transition duration-200 group-hover:-translate-y-1">    MEDIDAS ORIGINALES*/}
-        <Image src="/ui/button.png" alt="" fill className="object-contain" sizes="48px" />
+      <span aria-hidden className="relative h-20 w-20 shrink-0 transition duration-200 group-hover:-translate-y-1">
+        <Image src="/ui/button.png" alt="" fill className="object-contain" sizes="80px" />
       </span>
-      <span className="text-xs font-medium uppercase tracking-wide">{label}</span>
+      <span className="font-brittany-signature text-sm uppercase tracking-wide">{label}</span>
     </Link>
   );
 }
@@ -45,14 +44,20 @@ export function WaveNavigation({ className = "" }: WaveNavigationProps) {
     ? NAV_ITEMS
     : [{ key: "home", label: "Home", href: "/" }, ...NAV_ITEMS.filter((item) => item.href !== pathname)];
 
+  const isHome = pathname === "/";
+
   return (
     <nav aria-label="Navegación principal" className={className}>
-      <ul className="flex flex-wrap justify-center gap-3 md:gap-6">
-        {items.map((item) => (
-          <li key={item.key}>
-            <WaveIcon label={item.label} href={item.href} isCurrent={item.href === pathname} />
-          </li>
-        ))}
+      <ul className="flex flex-wrap justify-center gap-y-2">
+        {items.map((item, index) => {
+          const homeItemWidth = isHome ? (index < 3 ? "w-1/3" : "w-1/2") : "w-1/3";
+
+          return (
+            <li key={item.key} className={`flex justify-center ${homeItemWidth}`}>
+              <WaveIcon label={item.label} href={item.href} isCurrent={item.href === pathname} />
+            </li>
+          );
+        })}
       </ul>
     </nav>
   );
