@@ -16,7 +16,7 @@ export default function HomePage() {
         <ContactSection />
       </div>
 
-      <WaveNavigation className="border-t border-black/20 pt-6" />
+      <WaveNavigation className="mt-12 mb-1 py-2" />
     </section>
   );
 }

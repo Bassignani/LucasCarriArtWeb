@@ -1,8 +1,34 @@
 @import "tailwindcss";
 
+/* Custom fonts from /public/fonts */
+@font-face {
+  font-family: 'Brittany';
+  src: url('/fonts/Brittany.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Brittany Signature';
+  src: url('/fonts/BrittanySignatureScript.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MistV';
+  src: url('/fonts/MISTV___.TTF') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
-  --font-brittany: "Brush Script MT";
-  --font-gagalin: "Impact";
+  --font-brittany: 'Brittany', "Brush Script MT";
+  --font-brittany-signature: 'Brittany Signature', 'Brittany', "Brush Script MT";
+  --font-gagalin: 'MistV', "Impact";
 }
 
 * {
@@ -19,7 +45,7 @@ a {
   text-decoration: none;
 }
 
-#footer {
+/* #footer {
   position: fixed;
   bottom: 0;
   left: 0;
@@ -28,7 +54,7 @@ a {
   text-align: center;
   padding: 10px 0;
   font-family: 'brittany';
-}
+} */
 
 
 .font-brittany {
