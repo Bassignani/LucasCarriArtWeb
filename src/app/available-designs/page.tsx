@@ -1,12 +1,35 @@
 import { GalleryGrid } from "@/components/gallery/GalleryGrid";
-import { getArtworksByCategory } from "@/data/artworks";
+import type { Artwork } from "@/data/artworks";
+import fs from "fs/promises";
+import path from "path";
 
-export default function AvailableDesignsPage() {
+async function readAvailablesFromPublic(): Promise<Artwork[]> {
+  const dir = path.join(process.cwd(), "public", "images", "Availables");
+  let files: string[] = [];
+  try {
+    files = await fs.readdir(dir);
+  } catch (e) {
+    return [];
+  }
+  const imageFiles = files.filter((f) => !f.startsWith('.') && /\.(png|jpe?g|svg|webp)$/i.test(f));
+
+  return imageFiles.map((file, i) => ({
+    id: `avail-${i}`,
+    title: file.replace(/\.(png|jpe?g|svg)$/i, "").replace(/[-_]/g, " "),
+    image: `/images/Availables/${encodeURIComponent(file)}`,
+    category: "available",
+    isAvailableForPurchase: true,
+  } as Artwork));
+}
+
+export default async function AvailableDesignsPage() {
+  const artworks = await readAvailablesFromPublic();
+
   return (
     <section className="space-y-6">
-      <h2 className="text-3xl font-semibold">Available Designs</h2>
-      <p className="text-sm text-black/70">Galería preparada para futura tienda: cada card deja visible un estado para botón de compra.</p>
-      <GalleryGrid artworks={getArtworksByCategory("available")} showFutureBuyAction />
+      <h2 className="text-3xl  font-gagalin ">Available Designs</h2> 
+      {/* font-semibold */}
+      <GalleryGrid artworks={artworks} showFutureBuyAction />
     </section>
   );
 }
