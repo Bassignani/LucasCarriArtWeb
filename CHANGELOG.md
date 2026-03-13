@@ -5,6 +5,13 @@ Todos los cambios importantes de este proyecto serán documentados en este archi
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/),
 y este proyecto adhiere a [Semantic Versioning](https://semver.org/lang/es/).
 
+## [0.3.4] - 2026-03-13
+
+### Changed
+- Ajuste del componente `ExpandedArtwork` para eliminar el contenedor blanco sobredimensionado en la imagen ampliada.
+- El botón de cierre ahora flota en la esquina superior de la imagen expandida, manteniendo la acción visible sin agregar marco adicional.
+- Documentación de galerías actualizada con el nuevo comportamiento visual de expansión.
+
 ## [0.3.3] - 2026-03-09
 
 ### Changed
