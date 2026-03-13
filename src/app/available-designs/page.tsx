@@ -27,7 +27,7 @@ export default async function AvailableDesignsPage() {
 
   return (
     <section className="space-y-6">
-      <h2 className="text-3xl  font-gagalin ">Available Designs</h2> 
+      <h2 className="text-3xl  font-kingthings-lickorishe">Available Designs</h2> 
       {/* font-semibold */}
       <GalleryGrid artworks={artworks} showFutureBuyAction />
     </section>

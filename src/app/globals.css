@@ -18,6 +18,22 @@
 }
 
 @font-face {
+  font-family: 'Kingthings Lickorishe';
+  src: url('/fonts/KingthingsLickorishe.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Retro Wild';
+  src: url('/fonts/RetroWild.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: 'MistV';
   src: url('/fonts/MISTV___.TTF') format('truetype');
   font-weight: 400;
@@ -29,6 +45,8 @@
   --font-brittany: 'Brittany', "Brush Script MT";
   --font-brittany-signature: 'Brittany Signature', 'Brittany', "Brush Script MT";
   --font-gagalin: 'MistV', "Impact";
+  --font-kingthings-lickorishe: 'Kingthings Lickorishe', "serif";
+  --font-retro-wild: 'Retro Wild', "serif";
 }
 
 * {
@@ -63,8 +81,17 @@ a {
 
 .font-gagalin {
   font-family: var(--font-gagalin), sans-serif;
+  font-weight: bold;
 }
 
 .font-brittany-signature {
   font-family: var(--font-brittany), cursive;
+}
+
+.font-kingthings-lickorishe {
+  font-family: var(--font-kingthings-lickorishe), sans-serif;
+}
+
+.font-retro-wild {
+  font-family: var(--font-retro-wild), sans-serif;
 }

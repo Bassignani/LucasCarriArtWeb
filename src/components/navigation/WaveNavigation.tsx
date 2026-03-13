@@ -15,10 +15,10 @@ type WaveNavigationProps = {
 };
 
 const NAV_ITEMS: NavItem[] = [
-  { key: "logos", label: "Logos", href: "/logos" },
   { key: "portraits", label: "Portraits", href: "/portraits" },
-  { key: "available", label: "Available Designs", href: "/available-designs" },
+  { key: "logos", label: "Logos", href: "/logos" },
   { key: "collabs", label: "Collabs", href: "/collabs" },
+  { key: "available", label: "Available Designs", href: "/available-designs" },
   { key: "contact", label: "Contact", href: "/contact" },
   // { key: "illustrations", label: "Illustrations", href: "/illustrations" },
 ];
@@ -28,9 +28,9 @@ function WaveIcon({ label, href, isCurrent }: { label: string; href: string; isC
     <Link
       href={href}
       aria-current={isCurrent ? "page" : undefined}
-      className="group inline-flex flex-col sm:flex-row items-center gap-2 rounded-xl px-3 py-2 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-black"
+      className="group inline-flex flex-col sm:flex-row items-center gap-1 rounded-xl px-3 py-2 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-black overflow-visible"
     >
-      <span aria-hidden className="relative h-10 w-10 sm:h-12 sm:w-12 md:h-14 md:w-14 lg:h-20 lg:w-20 shrink-0 transition-transform duration-200 group-hover:-translate-y-1">
+      <span aria-hidden className="relative h-10 w-10 sm:h-12 sm:w-12 md:h-14 md:w-14 lg:h-20 lg:w-20 shrink-0 transition-transform duration-300 group-hover:scale-[1.4] transform-origin-center">
         <Image
           src="/ui/button.png"
           alt=""
@@ -39,7 +39,8 @@ function WaveIcon({ label, href, isCurrent }: { label: string; href: string; isC
           sizes="(max-width: 640px) 36px, (max-width: 1024px) 56px, 88px"
         />
       </span>
-      <span className="font-gagalin text-sm sm:text-base md:text-xl lg:text-2xl uppercase tracking-wide text-center sm:text-left truncate">{label}</span>
+      {/* <span className="font-brittany-signature text-lg sm:text-xl md:text-3xl lg:text-4xl tracking-wide text-center sm:text-left transition-transform duration-250 group-hover:scale-[1.2]  transform-origin-center">{label}</span> */}
+      <span className="font-brittany-signature text-lg sm:text-xl md:text-3xl lg:text-4xl tracking-wide text-center sm:text-left   transform-origin-center">{label}</span>
     </Link>
   );
 }

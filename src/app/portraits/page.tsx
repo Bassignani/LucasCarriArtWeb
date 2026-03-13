@@ -26,7 +26,7 @@ export default async function PortraitsPage() {
 
   return (
     <section className="space-y-6">
-      <h2 className="text-3xl font-gagalin">Portraits</h2>
+      <h2 className="text-3xl font-kingthings-lickorishe">Portraits</h2>
       <GalleryGrid artworks={artworks} />
     </section>
   );

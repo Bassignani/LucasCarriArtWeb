@@ -23,7 +23,7 @@ export function GalleryItem({ artwork, isExpanded, onToggle, showFutureBuyAction
       onClick={() => onToggle(artwork.id)}
       className="group relative aspect-[4/5] overflow-hidden rounded-xl border border-black text-left"
       whileHover={{ y: -4 }}
-      transition={{ duration: 0.2 }}
+      transition={{ duration: 2 }}
     >
       <Image
         src={artwork.image}

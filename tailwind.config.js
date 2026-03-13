@@ -12,6 +12,8 @@ module.exports = {
         'brittany': ['Brittany', 'Brush Script MT', 'cursive'],
         'brittany-signature': ['Brittany Signature', 'Brittany', 'Brush Script MT', 'cursive'],
         'gagalin': ['MistV', 'Impact', 'sans-serif'],
+        'kingthings-lickorishe': ['Kingthings_Lickorishe', 'serif'],
+        'retro-wild': ['Retro_Wild', 'sans-serif'],
       },
     },
   },
