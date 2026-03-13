@@ -29,3 +29,10 @@ La grilla usa:
 ## Preparación para futuras versiones
 
 La estructura de `Artwork` incluye campos opcionales para evolucionar a tienda (`isAvailableForPurchase`, `description`) sin romper el MVP.
+
+## Ajustes visuales recientes
+
+- Se eliminó el contenedor blanco sobredimensionado al expandir una obra en `ExpandedArtwork`.
+- La imagen ampliada ahora se renderiza sin marco extra, respetando únicamente su tamaño máximo visible (`90vh` x `90vw`).
+- El botón **Cerrar** queda flotando en la esquina superior derecha de la imagen para mantener la acción accesible sin tapar el contenido principal.
+

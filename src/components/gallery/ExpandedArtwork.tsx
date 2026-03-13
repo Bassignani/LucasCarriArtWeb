@@ -24,7 +24,7 @@ export function ExpandedArtwork({ artwork, onClose }: ExpandedArtworkProps) {
       />
       <motion.div
         layoutId={artwork.id}
-        className="pointer-events-auto relative h-[90vh] w-full max-w-4xl overflow-hidden rounded-2xl border-2 border-black bg-white"
+        className="pointer-events-auto relative flex max-h-[90vh] w-auto max-w-[90vw] items-center justify-center overflow-visible"
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         exit={{ opacity: 0, scale: 0.8 }}
@@ -33,15 +33,16 @@ export function ExpandedArtwork({ artwork, onClose }: ExpandedArtworkProps) {
         <button
           type="button"
           onClick={onClose}
-          className="absolute right-3 top-3 z-10 rounded-full border text-white border-black bg-black px-2 py-1 text-xs"
+          className="absolute -right-2 -top-2 z-10 rounded-full border border-black bg-black px-2 py-1 text-xs text-white shadow-md"
         >
           Cerrar
         </button>
         <Image
           src={artwork.image}
           alt={artwork.title}
-          fill
-          className="object-contain"
+          width={1400}
+          height={1400}
+          className="h-auto max-h-[90vh] w-auto max-w-[90vw] object-contain"
           sizes="(max-width: 768px) 90vw, 90vh"
           priority
         />
