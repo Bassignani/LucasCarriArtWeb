@@ -1,22 +1,51 @@
 import { ContactSection } from "@/components/contact/ContactSection";
-import { WaveNavigation } from "@/components/navigation/WaveNavigation";
+import Image from "next/image";
+
 
 export default function HomePage() {
   return (
-    <section className="flex min-h-[calc(100vh-240px)] flex-col justify-between space-y-8">
-      <div className="space-y-8">
-        <div className="rounded-2xl border border-black p-6 md:p-10">
-          <p className="text-sm uppercase tracking-[0.2em] text-black/60">Portfolio</p>
-          <h2 className="mt-3 text-3xl font-semibold md:text-5xl">Ilustración para surf, skate y cultura costera.</h2>
-          <p className="mt-4 max-w-2xl text-black/70">
-            Bienvenido a LucasCarri.Art. Explora las categorías desde la navegación por olas al final de la página.
-          </p>
-        </div>
-
+    <div className="flex flex-col items-center">
+      <section className="flex justify-center pt-0 pb-0">
         <ContactSection />
+      </section>
+
+      <div className="relative mt-0 w-full px-4 md:mt-0 md:px-6">
+        {/* <Image
+          src="/images/Contact/celebrizo.png"
+          alt="Celebrizo"
+          width={2400}
+          height={2400}
+          className="w-full h-auto object-contain relative z-0"
+        />
+        <div className="absolute z-10 w-3/4 left--3 top-20">
+          <Image
+            src="/images/Contact/manoIzquierda.png"
+            alt="Mano izquierda"
+            width={2400}
+            height={2400}
+            className="w-full h-auto object-contain rotate-45"
+          />
+        </div>
+        <div className="absolute z-10 w-3/4 right-0  top-20">
+          <Image
+            src="/images/Contact/manoDerecha.png"
+            alt="Mano derecha"
+            width={2400}
+            height={2400}
+            className="w-full h-auto object-contain -rotate-45"
+          />
+        </div> */}
+        <h2 id="contact-heading" className="mt-20 text-center text-3xl leading-none font-kingthings-lickorishe md:text-7xl">LETS DO THIS!</h2>
+        <Image
+          src="/images/Contact/end.png"
+          alt="Celebrizo"
+          width={2400}
+          height={2400}
+          className="relative z-0 mx-auto -mt-15 h-auto w-full max-w-3xl object-contain md:-mt-44 md:max-w-4xl"
+        />
       </div>
 
-      <WaveNavigation className="mt-12 mb-1 py-2" />
-    </section>
+
+    </div>
   );
 }

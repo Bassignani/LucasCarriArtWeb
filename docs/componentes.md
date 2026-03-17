@@ -43,12 +43,12 @@ Navegación principal basada en iconos de olas.
 
 ### `ContactSection`
 
-Bloque reutilizable en Home con:
+Bloque reutilizable en Home con una columna titulada `Contacts` y 3 filas de contacto interactivo.
 
-- formulario (solo UI)
+- icono de ola reutilizado desde `/public/ui/button.png` en cada fila
+- enlace de email (`mailto:`)
 - enlace a Instagram
 - enlace a WhatsApp
-- enlace de email
 
 ## Principios aplicados
 
