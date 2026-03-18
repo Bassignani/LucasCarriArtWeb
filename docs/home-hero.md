@@ -46,6 +46,7 @@ Ajustes aplicados sin cambiar la lógica de rutas:
 - Mayor impacto del banner en la primera vista.
 - Firma tipográfica consistente en hero + navegación.
 - Jerarquía más clara: contenido → footer → navegación flotante sobre zona inferior.
+- Párrafos de cierre del hero (llamada a la acción) con tamaño y peso ligeramente superiores para reforzar lectura y conversión.
 
 
 ## Compatibilidad de PR

@@ -9,11 +9,12 @@ type GalleryItemProps = {
   isExpanded: boolean;
   onToggle: (id: string) => void;
   showFutureBuyAction?: boolean;
+  imageFit?: "cover" | "contain";
 };
 
-export function GalleryItem({ artwork, isExpanded, onToggle, showFutureBuyAction }: GalleryItemProps) {
+export function GalleryItem({ artwork, isExpanded, onToggle, imageFit = "cover" }: GalleryItemProps) {
   if (isExpanded) {
-    return <div aria-hidden className="aspect-[4/5] rounded-xl border border-dashed border-black/30" />;
+    return <div aria-hidden className="aspect-4/5 rounded-xl border border-dashed border-black/30" />;
   }
 
   return (
@@ -21,7 +22,7 @@ export function GalleryItem({ artwork, isExpanded, onToggle, showFutureBuyAction
       layoutId={artwork.id}
       type="button"
       onClick={() => onToggle(artwork.id)}
-      className="group relative aspect-[4/5] overflow-hidden rounded-xl border border-black text-left"
+      className="group relative aspect-4/5 overflow-hidden rounded-xl border border-black text-left"
       whileHover={{ y: -4 }}
       transition={{ duration: 2 }}
     >
@@ -29,13 +30,14 @@ export function GalleryItem({ artwork, isExpanded, onToggle, showFutureBuyAction
         src={artwork.image}
         alt={artwork.title}
         fill
-        className="object-cover transition duration-300 group-hover:scale-[1.02]"
+        className={`transition duration-300 group-hover:scale-[1.02] ${imageFit === "contain" ? "object-contain" : "object-cover"}`}
         sizes="(max-width: 768px) 50vw, (max-width: 1024px) 50vw, 33vw"
       />
-      <div className="absolute inset-x-0 bottom-0 bg-white/90 p-2">
+      {/* Esta seccion tiene el nombre numerico de cada imagen */}
+      {/* <div className="absolute inset-x-0 bottom-0 bg-white/90 p-2">
         <p className="text-sm font-medium">{artwork.title}</p>
         {showFutureBuyAction ? <span className="text-xs text-black/70">Preparado para botón Buy</span> : null}
-      </div>
+      </div> */}
     </motion.button>
   );
 }

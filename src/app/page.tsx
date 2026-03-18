@@ -23,24 +23,26 @@ export default function HomePage() {
           </h1>
           
           <p className="font-kingthings-lickorishe text-lg uppercase tracking-[0.2em] sm:text-2xl md:text-3xl mt-25">
-            A TSUNAMI OF INFINITE CREATION
+            A WAVE OF INFINITE CREATION
           </p>
         </header>
 
         <div className="mt-8 max-w-3xl space-y-5 font-retro-wild text-base leading-relaxed text-black/80 sm:text-xl">
+          <p className="text-lg  sm:text-2xl">Olá, I’m Lucas – a surf artist based in Lagos, Portugal.</p>
+          <br />
           <p>
-            Due to being involved in the Surf industry for over a decade 
-            (Surfcamps, SurfHouses, Shops and cafes) 
-            I developed a particular feeling for the Rad Old School 
-            illustrations over the new more sober too serious designs
-            and this is what you will find here
-            original illustrations, vectors and logos 
-            totally customised and full of personality 
+            I’ve had a passion for art, design and illustration since early childhood, 
+            finding inspiration in everything I see around me. After moving to Portugal 
+            15 years ago, I became part of the surf community here in the Algarve, where 
+            I continued to find inspiration in the waves. My art naturally graduated towards a more 
+            relaxed, surf-influenced style, choosing old school illustration methods over newer, more 
+            serious designs, and this is what you’ll find here: original artwork, totally customised and full of personality.
+ 
           </p>
           <br />
-          <p>take a look at some of this awesome collaborations and commission works</p>
+          <p className="text-lg  sm:text-2xl">I’m available for all of your design needs – from personalised portraits, to professional branding and everything in between.</p>
           <br />
-          <p>and now the question... Fancy an original design???</p>
+          <p className="text-lg  sm:text-2xl">Let’s get in contact and create something unique!</p>
         </div>
       </div>
 

@@ -26,6 +26,13 @@ La grilla usa:
 - Tablet: 2 columnas
 - Desktop: 3 columnas
 
+## Ajuste de Logos
+
+- Se agregó la prop opcional `imageFit` en `GalleryGrid`/`GalleryItem` para configurar cómo se encuadra la miniatura en la celda.
+- Valor por defecto: `cover` para conservar el comportamiento actual del resto de galerías.
+- En la página de Logos se usa `imageFit="contain"`, lo que permite que los logos se reduzcan para verse completos en la tarjeta.
+- La previsualización expandida no cambia y sigue ampliando correctamente en overlay con `ExpandedArtwork`.
+
 ## Preparación para futuras versiones
 
 La estructura de `Artwork` incluye campos opcionales para evolucionar a tienda (`isAvailableForPurchase`, `description`) sin romper el MVP.
@@ -35,4 +42,5 @@ La estructura de `Artwork` incluye campos opcionales para evolucionar a tienda (
 - Se eliminó el contenedor blanco sobredimensionado al expandir una obra en `ExpandedArtwork`.
 - La imagen ampliada ahora se renderiza sin marco extra, respetando únicamente su tamaño máximo visible (`90vh` x `90vw`).
 - El botón **Cerrar** queda flotando en la esquina superior derecha de la imagen para mantener la acción accesible sin tapar el contenido principal.
+- En `Collabs` se corrigió la construcción de rutas para incluir la subcarpeta de cada colección, evitando previews vacías por `404`.
 

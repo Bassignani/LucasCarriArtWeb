@@ -8,7 +8,7 @@ async function readLogosFromPublic(): Promise<Artwork[]> {
   let files: string[] = [];
   try {
     files = await fs.readdir(dir);
-  } catch (e) {
+  } catch {
     return [];
   }
   const imageFiles = files.filter((f) => !f.startsWith('.') && /\.(png|jpe?g|svg|webp)$/i.test(f));
@@ -27,7 +27,7 @@ export default async function LogosPage() {
   return (
     <section className="space-y-6">
       <h2 className="text-3xl font-kingthings-lickorishe">Logos</h2>
-      <GalleryGrid artworks={artworks} />
+      <GalleryGrid artworks={artworks} imageFit="contain" />
     </section>
   );
 }

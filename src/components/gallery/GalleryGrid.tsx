@@ -9,9 +9,10 @@ import { ExpandedArtwork } from "@/components/gallery/ExpandedArtwork";
 type GalleryGridProps = {
   artworks: Artwork[];
   showFutureBuyAction?: boolean;
+  imageFit?: "cover" | "contain";
 };
 
-export function GalleryGrid({ artworks, showFutureBuyAction = false }: GalleryGridProps) {
+export function GalleryGrid({ artworks, showFutureBuyAction = false, imageFit = "cover" }: GalleryGridProps) {
   const [expandedId, setExpandedId] = useState<string | null>(null);
 
   const expandedArtwork = useMemo(
@@ -33,6 +34,7 @@ export function GalleryGrid({ artworks, showFutureBuyAction = false }: GalleryGr
             isExpanded={expandedId === artwork.id}
             onToggle={handleToggle}
             showFutureBuyAction={showFutureBuyAction}
+            imageFit={imageFit}
           />
         ))}
       </div>

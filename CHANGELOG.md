@@ -5,6 +5,25 @@ Todos los cambios importantes de este proyecto serán documentados en este archi
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/),
 y este proyecto adhiere a [Semantic Versioning](https://semver.org/lang/es/).
 
+## [0.3.7] - 2026-03-18
+
+### Changed
+- Se agregó una configuración de ajuste de miniatura (`imageFit`) en la galería para controlar el encuadre por sección.
+- En la galería de Logos se aplica `imageFit="contain"` para que cada logo se vea completo dentro de su celda.
+- La vista de previsualización ampliada se mantiene sin cambios para conservar el comportamiento de zoom en overlay.
+
+## [0.3.6] - 2026-03-18
+
+### Fixed
+- Corrección de rutas de imágenes en `Collabs` para incluir la subcarpeta correspondiente (`AlgarveSportland`, `Contests`, `LOSC`, `SurfItEasy`) y permitir previsualización correcta en la galería.
+- IDs de obras en `Collabs` diferenciados por colección para evitar colisiones de identificadores entre secciones.
+
+## [0.3.5] - 2026-03-18
+
+### Changed
+- Se aumentó ligeramente el tamaño y peso tipográfico de los dos párrafos de cierre en Home para destacar mejor la llamada a la acción.
+- Documentación del hero actualizada con el criterio de jerarquía visual aplicado a esos párrafos.
+
 ## [0.3.4] - 2026-03-13
 
 ### Changed
