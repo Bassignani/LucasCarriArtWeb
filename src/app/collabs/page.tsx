@@ -93,7 +93,7 @@ export default async function CollabsPage() {
     <section className="space-y-6">
       <h2 className="text-3xl font-kingthings-lickorishe">Collabs - Surf It Easy</h2>
       <GalleryGrid artworks={artworksSurfItEasy} />
-      <h2 className="text-3xl font-kingthings-lickorishe">Collabs - Algerve Sport Land</h2>
+      <h2 className="text-3xl font-kingthings-lickorishe">Collabs - Algarve Sport Land</h2>
       <GalleryGrid artworks={artworksAlgarveSportland} />
       <h2 className="text-3xl font-kingthings-lickorishe">Collabs - Lagos Ocean Sports Clube</h2>
       <GalleryGrid artworks={artworksLOSC} />

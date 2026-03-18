@@ -46,3 +46,7 @@ Se agregó `SiteShell` como componente de estructura para detectar la ruta actua
 - Rutas internas: navegación superior
 
 Esto permite mantener el diseño de portada sin duplicar lógica en cada página.
+
+## Configuración de entorno de desarrollo
+
+Se desactivó el indicador flotante de Next.js en `next.config.ts` mediante `devIndicators: false` para evitar ruido visual sobre el portfolio durante pruebas en local.

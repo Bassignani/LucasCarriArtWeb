@@ -5,6 +5,12 @@ Todos los cambios importantes de este proyecto serán documentados en este archi
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/),
 y este proyecto adhiere a [Semantic Versioning](https://semver.org/lang/es/).
 
+## [0.3.10] - 2026-03-18
+
+### Changed
+- Se desactivó el indicador flotante de Next.js en entorno de desarrollo (`devIndicators: false`) para mantener todas las pantallas limpias durante la previsualización.
+- Documentación de arquitectura actualizada con la nueva configuración de desarrollo.
+
 ## [0.3.9] - 2026-03-18
 
 ### Changed

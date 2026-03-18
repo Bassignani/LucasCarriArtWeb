@@ -32,7 +32,7 @@ function WaveIcon({ label, href, isCurrent }: { label: string; href: string; isC
     >
       <span aria-hidden className="relative h-10 w-10 sm:h-12 sm:w-12 md:h-14 md:w-14 lg:h-20 lg:w-20 shrink-0 transition-transform duration-300 group-hover:scale-[1.4] transform-origin-center">
         <Image
-          src="/ui/button.png"
+          src="/ui/button_lim.png"
           alt=""
           fill
           className="object-contain"
