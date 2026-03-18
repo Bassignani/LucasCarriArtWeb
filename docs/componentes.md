@@ -45,10 +45,11 @@ Navegación principal basada en iconos de olas.
 
 Bloque reutilizable en Home con una columna titulada `Contacts` y 3 filas de contacto interactivo.
 
-- icono de ola reutilizado desde `/public/ui/button.png` en cada fila
+- iconos por canal desde `/public/ui/button_email.png`, `/public/ui/button_insta.png` y `/public/ui/button_whatsapp.png`
 - enlace de email (`mailto:`)
 - enlace a Instagram
 - enlace a WhatsApp
+- botones de contacto (email, Instagram y WhatsApp) escalados a 2x para mejorar visibilidad
 
 ## Principios aplicados
 

@@ -5,6 +5,18 @@ Todos los cambios importantes de este proyecto serán documentados en este archi
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/),
 y este proyecto adhiere a [Semantic Versioning](https://semver.org/lang/es/).
 
+## [0.3.9] - 2026-03-18
+
+### Changed
+- Se aumentó a 2x el tamaño de los botones visuales de contacto (email, Instagram y WhatsApp) en `ContactSection`.
+- Se actualizó la documentación de componentes para reflejar el nuevo tamaño y los recursos de iconos por canal.
+
+## [0.3.8] - 2026-03-18
+
+### Changed
+- Se aumentó a 3x el tamaño de los botones visuales de contacto (email, Instagram y WhatsApp) en `ContactSection`.
+- Documentación de componentes actualizada con el nuevo criterio visual de los botones de contacto.
+
 ## [0.3.7] - 2026-03-18
 
 ### Changed
